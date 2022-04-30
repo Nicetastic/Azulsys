@@ -357,42 +357,48 @@ h1{
     margin: 0;
 } 
 
-
-
 @media only screen and (max-width: 1200px){
+    .nav{
+        display: grid;
+        background-color: #D0C9C7;
+        grid-template-columns: 0.5fr 1fr; 
+        grid-template-rows: 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: "logo nav__responsive-button-container"; 
+        grid-area: nav; 
+    }
+    
     .nav-bar{
     display: none;
     }
 
-    .logo{
+    .nav__responsive-li-container{
         display: none;
+    }
+
+
+    .nav__responsive-button-container{
+        display: block;
+        height: auto;
+        width: 100%;
+        padding-top: 1em;
+    }
+    .nav__responsive-button{
+        float: right;
+        font-size: xx-large;
+        padding: 1em;
     }
 
     .nav__responsive-ul{
         display: block;
-        position: absolute;
-        width: 100%;
-        background-color: #D0C9C7;
     }
 
-    .nav__responsive-button-container{
-        position: absolute;
 
-    }
-
-    .nav__responsive-button{
-        height: 20px;
-        width: 20px;
-    }
-
-    .nav{height: 25px;
-
-    }
-
-    .nav-bar-mobile{
+    .logo{
         display: block;
+        width: 7em;
+        padding: 1em;
     }
-
     .container{
         grid-template-columns: 1fr;
         grid-template-rows: 0.1fr 0.1fr 0.2fr 1.5fr 0.1fr 0.1fr;
@@ -410,7 +416,7 @@ h1{
     }
 
     .nosotros{
-        font-size: 3.5vh;
+
         grid-template-rows: 0.1fr;
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -420,22 +426,26 @@ h1{
         font-size: 2.5vh;
     }
 
-    .fila2, .fila1{
-        justify-content: space-around;
+    .fila1, .fila2{
+        justify-content: center;
+        align-content: flex-start;
+        padding: 5%;
+        padding-left: 15%;
     }
 
-    .fila1, .fila3{
-        display: one;
+    .fila3{
+        display: none;
     }
-
+    
+    .footer ul li {
+        font-size: 1em;
+    }
 }
 
 @media only screen and (min-width: 1200px){
-    .nav__responsive-container{
+    .nav__responsive-li-container{
         display: none;
     }
-
-
 
 }
 
