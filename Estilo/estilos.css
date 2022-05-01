@@ -266,15 +266,17 @@ ul li a{
     font-size: 1.3em;
 }
 
-h1{
+h5{
     display: inline;
     align-content: center;
     justify-content: center;
     align-items: center;
     font-size: 2.3vh;
-    padding: 1em 0 1em 0;
     color: #000;
     
+}
+.info a{
+    padding-top: 1.1em;
 }
 
 .product-container{  
@@ -364,18 +366,19 @@ h1{
         grid-template-columns: 0.5fr 1fr; 
         grid-template-rows: 1fr; 
         gap: 0px 0px; 
-        grid-template-areas: "logo nav__responsive-button-container"; 
+        grid-template-areas: "logo nav__responsive-ul"; 
         grid-area: nav; 
     }
-    
+
     .nav-bar{
     display: none;
     }
 
-    .nav__responsive-li-container{
+    .nav__responsive-li{
         display: none;
+        width: 100%;
+        padding: 9px;
     }
-
 
     .nav__responsive-button-container{
         display: block;
@@ -390,6 +393,10 @@ h1{
     }
 
     .nav__responsive-ul{
+        display: block;
+    }
+    
+    ul li{
         display: block;
     }
 
