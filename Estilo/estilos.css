@@ -192,6 +192,13 @@ ul li a{
     width: 100%;
 }
 
+a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /**
  * . NOSOTROS
  * -------------------------------------------------------------------
@@ -321,12 +328,14 @@ h5{
 }
 
 .product-name{
-    color: black;
-    height:25px
+    color: #fff;
+    text-shadow: #000;
+    height:25px;
 }
 
 .product-price{
-    color: black;
+    color: #fff;
+    text-shadow: #000;
 }
 
 .product-img{
@@ -456,7 +465,7 @@ h5{
     }
     
     .footer ul li {
-        font-size: 0.5em;
+        font-size: 1em;
     }
 }
 
