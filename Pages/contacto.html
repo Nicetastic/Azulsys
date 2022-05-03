@@ -1,56 +1,80 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Estilo/estilos.css">
-    <title>Inicio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8427143abd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Inicio</title>
 </head>
 
-<body class="container">
+<body class="contact-container">
     <header class="header">
-        <img src="./Source/llamada-telefonica.png"  alt="Telefono de contacto" class="header-img"
+        <img src="../Source/llamada-telefonica.png"  alt="Telefono de contacto" class="header-img"
         <h2>+03412733529</h2>
     </header>
 
     <nav class="nav">
-            <div class="logo">
-                <img src="../Source/logo.png" alt="logo" width="130%">
+        <div class="logo">
+            <a Title="Logo" href="../index.html"><img src="../Source/logo.png" alt="logo" width="130%"></a>
+        </div>
+        <div class="nav-bar">  
+            <ul class="nav-ul">
+                <li><a class="ex" href="../index.html"><b>Inicio</b></a></li>
+                <li><a class="ex" href="../Pages/productos.html"><b>Productos</b></a></li>
+                <li><a class="ex" href="../Pages/servicios.html"><b>Pago diario</b></a></li>
+                <li><a class="ex" href="../Pages/ubicacion.html"><b>Ubicación</b></a></li>
+            </ul>                   
+        </div>
+        <ul class="nav__responsive-ul">
+            <div class="nav__responsive-button-container">
+                <div class="nav__responsive-button fas fa-bars"></div>  
+            </div>  
+            <div class="nav__responsive-li">
+                <li><a class="rs" href="../index.html"><b>Inicio</b></a></li>
+                <li><a class="rs" href="../Pages/productos.html"><b>Productos</b></a></li>
+                <li><a class="rs" href="../Pages/servicios.html"><b>Pago diario</b></a></li>
+                <li><a class="rs" href="../Pages/ubicacion.html"><b>Ubicación</b></a></li>
             </div>
-            <div class="nav-bar">
-                <ul>
-                    <li><a class="ex" href="./index.html"><b>Inicio</b></a></li>
-                    <li><a class="ex" href="./Pages/productos.html"><b>Productos</b></a></li>
-                    <li><a class="ex" href="./Pages/servicios.html"><b>Pago diario</b></a></li>
-                    <li><a class="ex" href="./Pages/ubicacion.html"><b>Ubicación</b></a></li>
-                </ul>
-            </div>    
+        </ul>    
     </nav>
 
-    <article class="slide">
-        <a href="./Pages/productos.html"> <img src="./Source/1.jpg" alt="Pago diario" class="img-slider"></a>
-    </article>
-
-    <main class="form-contact">
-        <form action="">
-            <div>
-                <input type="text"></input>
-                <input type="email"></input>
-                <input type="number"></input>
-                <textarea ></textarea>
-            </div>
+    <form class="formulario-container" action="/my-handling-form-page" method="post">
+        <form class="formulario" action="/my-handling-form-page" method="post">
+            <ul>
+                <li>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="user_name">
+                </li>
+                <li>
+                    <label for="mail">Correo electrónico:</label>
+                    <input type="email" id="mail" name="user_mail">
+                </li>
+                <li>
+                    <label for="msg">Mensaje:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                </li>
+                <li class="button">
+                    <button type="submit">Envíe su mensaje</button>
+                </li>
+            </ul>
         </form>
-    </main>
+    </form>
+
+    <article class="info">
+        <h5>No te quedes con ninguna duda,</h5> 
+        <h5> consultanos</h5>
+        <a href="../Pages/contacto.html" class="contacto"> Haciendo click acá</a>
+    </article>
 
     <footer class="footer">
         <ul>
-            <li class="logo"><b>Creado por Uriel</b></li> 
-            <li><a href="./Pages/contacto.html">Contacto</a></li>
+            <li><b>Creado por Uriel</b></li> 
+            <li><a href="../Pages/contacto.html">Contacto</a></li>
         </ul>
     </footer>
 </body>
