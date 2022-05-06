@@ -119,14 +119,13 @@ form ul li{
     padding-bottom: 0.3em;
     color: whitesmoke;
     align-content: center;
-}
-
-.header-img{
-    display: inline-block;
-    width: 1.5em;
-    margin-left: 0.3em;
-    margin-right: 0.4em;
-    color: #000;
+    & .header-img{
+        display: inline-block;
+        width: 1.5em;
+        margin-left: 0.3em;
+        margin-right: 0.4em;
+        color: #000;
+    }
 }
 
 /**
@@ -686,5 +685,3 @@ h4{
         grid-area: formulario-container;
         background-color: #010C3D;
     }
-    
-
