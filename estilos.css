@@ -2,7 +2,7 @@
 * {
   padding: 0%;
   margin: 0%;
-  font-family: 'Poppins' !important;
+  font-family: 'Poppins'
 }
 
 .container {
@@ -925,5 +925,5 @@ h4 {
 @media only screen and (max-width: 600px) {
   #carouselExampleControls {
     display: none;
-  } 
+  }  
 }
