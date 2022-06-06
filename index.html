@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./estilos.css">
+    <!-- <link rel="stylesheet" href="./estilos_bootstrap.scss"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8427143abd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <meta name="title" content="Azul Servicios y Soluciones">
     <meta name="description" content="Pago por dia para comercios, entrega inmediata" >
     <meta name="keywords" content="servicios, soluciones, pago diario, pago por dia, prestamos, rosario, dinero en el acto" >
@@ -20,93 +22,175 @@
     <title>Inicio</title>
 </head>
 
-<body class="container">
-    <header class="header">
-        <img src="./Source/llamada-telefonica.png"  alt="Telefono de contacto" class="header-img"
-        <h2>+03412733529</h2>
+<body class="container-xxl">
+    <header class="header-background">
+        <div class="d-flex align-items-center">
+            <div class="d-inline-block ms-2 mt-1 mb-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 18 18">
+                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                </svg>
+            </div>
+            <div class="d-inline-block">
+                +03412733529
+            </div>
+        </div>
     </header>
 
-    <nav class="nav">
-        <div class="logo">
-            <a Title="Logo" href="./index.html"><img src="./Source/logo.png" alt="logo" width="130%"></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand w-200" title="Logo" href="./index.html">
+                <img class="img-fluid" src="./Source/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse display-6" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active em-1-3 ex" aria-current="page" href="./index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link em-1-3 ex" href="./Pages/productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link em-1-3 ex" href="./Pages/servicios.html">Pago diario</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link em-1-3 ex" href="./Pages/ubicacion.html">Ubicación</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link em-1-3 ex" href="./Pages/contacto.html">Contacto</a>
+                </li>
+            </ul>
         </div>
-        <div class="nav-bar">  
-            <ul class="nav-ul">
-                <li><a class="ex" href="./index.html"><b>Inicio</b></a></li>
-                <li><a class="ex" href="./Pages/productos.html"><b>Productos</b></a></li>
-                <li><a class="ex" href="./Pages/servicios.html"><b>Pago diario</b></a></li>
-                <li><a class="ex" href="./Pages/ubicacion.html"><b>Ubicación</b></a></li>
-            </ul>                   
         </div>
-        <ul class="nav__responsive-ul">
-            <div class="nav__responsive-button-container">
-                <div class="nav__responsive-button fas fa-bars"></div>  
-            </div>  
-            <div class="nav__responsive-li">
-                <li><a class="rs" href="./index.html"><b>Inicio</b></a></li>
-                <li><a class="rs" href="./Pages/productos.html"><b>Productos</b></a></li>
-                <li><a class="rs" href="./Pages/servicios.html"><b>Pago diario</b></a></li>
-                <li><a class="rs" href="./Pages/ubicacion.html"><b>Ubicación</b></a></li>
-            </div>
-        </ul>    
     </nav>
 
-    <article class="slide">
-        <a href="./Pages/productos.html"> <img src="./Source/1.jpg" alt="Pago diario" class="img-slider"></a>
-    </article>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./Source/1.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="./Source/2.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="./Source/3.jpg" class="d-block w-100">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
-    <main class="main">
-        <div class="items_container">
-            <div class="item led">
-                <a Title="Producto" href="./Pages/productos.html"><img src="./Source/tvled.png" width="70%" alt="tv led"></a>
+    <main class="custom-main">
+        <div class="pt-4 pb-4">
+            <div class="d-flex flex-wrap justify-content-center mt-3">
+                <div class="card text-center rounded-3 background-image color-white" style="width: 18rem; margin: 10px">
+                    <div class="text-center">
+                        <img class="card-img-top w-50" src="./Source/tvled.png" alt="Televisor led">
+                    </div>
+                    <div class="card-body pt-0">
+                        <h5 class="card-title">Televisores</h5>
+                        <p class="card-text">Smart tv 42' y 52'</p>
+                        <a href="./Pages/productos.html" class="btn btn-primary">Ver Más</a>
+                    </div> 
+                </div>
+                <div class="card text-center rounded-3 background-image color-white" style="width: 18rem; margin: 10px">
+                    <div class="text-center">
+                        <img class="card-img-top w-50" src="./Source/aacc.png" alt="Aire acondicionado">
+                    </div>
+                    <div class="card-body pt-0">
+                        <h5 class="card-title">Aires acondicionados</h5>
+                        <p class="card-text">Modelos inverter frio/calor</p>
+                        <a href="./Pages/productos.html" class="btn btn-primary">Ver Más</a>
+                    </div>
+                </div>
+                <div class="card text-center rounded-3 background-image color-white" style="width: 18rem; margin: 10px">
+                    <div class="text-center">
+                        <img class="card-img-top w-50 p-2" src="./Source/escala1.png" alt="Balanza">
+                    </div>
+                    <div class="card-body pt-0">
+                        <h5 class="card-title">Balanzas</h5>
+                        <p class="card-text">Confiables y precisas</p>
+                        <a href="./Pages/productos.html" class="btn btn-primary">Ver Más</a>
+                    </div>
+                </div>
+                <div class="card text-center rounded-3 background-image color-white" style="width: 18rem; margin: 10px">
+                    <div class="text-center">
+                        <img class="card-img-top w-50" src="./Source/cortadora.png" alt="Cortadora de fiambre">
+                    </div>
+                    <div class="card-body pt-0">
+                        <h5 class="card-title">Cortadoras</h5>
+                        <p class="card-text">La mejor calidad nacional</p>
+                        <a href="./Pages/productos.html" class="btn btn-primary">Ver Más</a>
+                    </div>
+                </div>
             </div>
-            <div class="item celular">
-                <a Title="Producto" href="./Pages/productos.html"><img src="./Source/smartphone.png" width="50%" alt="celular"></a>
+        </div>
+
+        <div class="pt-4 pb-4">
+            <div class="d-flex flex-wrap justify-content-center">
+                <div class="card text-left rounded-3" style="width: 25rem; margin: 10px">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item p-0">
+                            <b>Pague por día</b><p><small style="margin-left: 25px">Cuota fija en pesos</small></p>
+                        </li>
+                        <li class="list-group-item p-0">
+                            <b>Crédito a sola firma</b><p><small style="margin-left: 25px">Financiamos hasta el 100% del producto</small></p>
+                        </li>
+                        <li class="list-group-item p-0">
+                            <b>Entrega inmediata</b><p><small style="margin-left: 25px">Disponemos de un amplio stock de productos</small></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card text-left" style="width: 25rem; margin: 10px">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item p-0">
+                            <b>Somos fabricantes</b><p><small style="margin-left: 25px">Productos varios con precios directos de fábrica</small></p>
+                        </li>
+                        <li class="list-group-item p-0">
+                            <b>Productos a medida</b><p><small style="margin-left: 25px">Nos ajustamos a tus necesidades</small></p>
+                        </li>
+                        <li class="list-group-item p-0">
+                            <b>Variadas formas de pago</b><p><small style="margin-left: 25px">Tarjetas de crédito, mercado pago o efectivo</small></p>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="item balanza">
-                <a Title="Producto" href="./Pages/productos.html"><img src="./Source/escala.png" width="70%" alt="balanza"></a>
+        </div>
+
+        <div class="pt-4 pb-4">
+            <div class="d-flex flex-wrap justify-content-center mb-4">
+                <div class="card text-center rounded-3 p-3" style="width: 50rem; margin: 10px">
+                    <h5>No te quedes con ninguna duda, consultanos</h5> 
+                    <a href="./Pages/contacto.html" class="contacto"> Haciendo click acá</a>
+                </div>
             </div>
-            <div class="item cortadora">
-                <a Title="Producto" href="./Pages/productos.html"><img src="./Source/cortadora.png" width="70%" alt="celular"></a>
-            </div>
-        </div> 
-        <div class="nosotros">
-            <div class="fila1">  
-                <h3>Pague por día</h3>
-                <p>Cuota fija en pesos.</p>
-                <h3>Crédito a sola firma</h3>
-                <p>Financiamos hasta el 100% del producto.</p>
-                <h3>Entrega inmediata</h3>
-                <p>Disponemos de un amplio</p> 
-                <p>stock de productos.</p>
-            </div>
-            <div class="fila2">  
-                <h3>Somos fabricantes</h3>
-                <p>Productos varios con precios</p>
-                <p>directos de fábrica.</p>
-                <h3>Productos a medida</h3>
-                <p>Nos ajustamos a tus necesidades.</p>
-                <h3>Variadas formas de pago</h3>
-                <p>Tarjetas de crédito, mercado pago,</p>
-                <p>efectivo, etc.</p>
-            </div>  
-            <div class="fila3">
-                <h3>Asesoramiento integral para la instalación de su negocio</h3>
-            </div>
-        </div>    
+        </div>
     </main>
 
-    <article class="info">
-        <h5>No te quedes con ninguna duda,</h5> 
-        <h5> consultanos</h5>
-        <a href="./Pages/contacto.html" class="contacto"> Haciendo click acá</a>
-    </article>
-
-    <footer class="footer">
-        <ul>
-            <li><b>Creado por Uriel</b></li> 
-            <li><a href="./Pages/contacto.html">Contacto</a></li>
-        </ul>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3" style="background-color: #D0C9C7;">
+        <div class="ms-3" style="width:260px">
+            <p class="mb-0">© 2022 Uriel, Scaglia</p>
+        </div>
+        <div>
+            <a href="/" class="d-flex align-items-center justify-content-center link-dark text-decoration-none w-200">
+                <img class="img-fluid" src="./Source/logo.png" alt="logo">
+            </a>
+        </div>
+        <div>
+            <ul class="nav justify-content-end">
+                <li class="nav-item"><a href="#" class="px-2">Quienes somos</a></li>
+                <li class="nav-item"><a href="#" class="px-2">Contacto</a></li>
+            </ul>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
